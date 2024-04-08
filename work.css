@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+nav{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+}
+nav h3{
+    display: none;
+}
+nav img{
+    height: 70px;
+    width: 200px;
+    margin-left: 15px;
+}
+#nav-2{
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+#nav-2 h4 {
+    font-size: 20px;
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid wheat;
+    border-radius: 35px;
+    position: relative;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all ease-in 0.3s;
+    overflow: hidden;
+}
+#nav-2 h4::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    bottom: -100%;
+    left: 0;
+    border-radius: 50%;
+    transition: all ease-in 0.3s;
+}
+#nav-2 h4:hover::after{
+    bottom: 0;
+    border-radius: 35px;
+    background-color: rgba(233, 208, 177, 0.918);
+}
+#nav-2 a{
+    text-decoration: none;
+    color: white;
+    position: relative;
+    z-index: 9;
+}
+#nav-2 h4:hover a{
+    color: black;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    gap: 30px;
+    background-color: black;
+}
+#one{
+    height: 500px;
+    width: 400px;
+    object-fit: contain;
+    padding-left: 70px;
+    box-shadow: 2px 2px rgb(241, 139, 5),-1em 0.4em olive;
+}
+#two{
+    height: 500px;
+    width: 400px;
+    object-fit: contain;
+    padding-left: 250px;
+    box-shadow: 2px 2px rgb(241, 139, 5),-1em 0.4em olive;
+}
+#three{
+    height: 200px;
+    width: 100%;
+    object-fit: contain;
+    padding-top: 40px;
+    box-shadow: 2px 2px rgb(241, 139, 5),-1em 0.4em olive;
+}
+#four{
+    height: 500px;
+    width: 600px;
+    object-fit: cover;
+    box-shadow: 2px 2px rgb(241, 139, 5),-1em 0.4em olive;
+}
+#five{
+    height: 450px;
+    padding-left: 40px;
+    object-fit: contain;
+    box-shadow: 2px 2px rgb(241, 139, 5),-1em 0.4em olive;
+}
+#six{
+    height: 450px;
+    padding-left: 40px;
+    object-fit: contain;
+    padding-top: 80px;
+    box-shadow: 2px 2px rgb(241, 139, 5),-1em 0.4em olive;
+}
+#seven{
+    height: 450px;
+    object-fit: contain;
+    padding-left: 30px;
+    box-shadow: 2px 2px rgb(241, 139, 5),-1em 0.4em olive;
+}
+#eight{
+    height: 450px;
+    object-fit: contain;
+    padding-left: 140px;
+    padding-right: 30px;
+    box-shadow: 2px 2px rgb(241, 139, 5),-1em 0.4em olive;
+}
+#nine{
+    height: 450px;
+    object-fit: contain;
+    padding-left: 140px;
+    padding-right: 30px;
+    padding-top: 70px;
+    box-shadow: 2px 2px rgb(241, 139, 5),-1em 0.4em olive;
+}
+#ten{
+    height: 450px;
+    object-fit: contain;
+    padding-left: 30px;
+    box-shadow: 2px 2px rgb(241, 139, 5),-1em 0.4em olive;
+}
+#eleven{
+    height: 450px;
+    object-fit: contain;
+    padding-left: 140px;
+    padding-right: 30px;
+    box-shadow: 2px 2px rgb(241, 139, 5),-1em 0.4em olive;
+}
+#twelve{
+    height: 450px;
+    object-fit: contain;
+    padding-left: 140px;
+    padding-right: 30px;
+    padding-top: 60px;
+    box-shadow: 2px 2px rgb(241, 139, 5),-1em 0.4em olive;
+}
+#thirteen{
+    height: 450px;
+    object-fit: contain;
+    padding-left: 370px;
+    box-shadow: 2px 2px rgb(241, 139, 5),-1em 0.4em olive;
+}
+#fourteen{
+    height: 450px;
+    object-fit: contain;
+    padding-top: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+    box-shadow: 2px 2px rgb(241, 139, 5),-1em 0.4em olive;
+}
+#page1{
+    height: 100px;
+    width: 100%;
+    background-color: black;
+    position: relative;
+    padding: 0 0;
+    z-index: 10;
+}    
+.page2{
+    min-height: 100vh;
+    width: 100%;
+    background-color: black;
+    position: relative;
+    padding: 0 0;
+    
+}
+#nav-3{
+    display: none;
+}
+h3{
+    display: none;
+}
+@media (max-width:600px) {
+    #page1{
+        height: 50vh;
+        width: 200%;
+        cursor: auto;
+        background-color: black;
+    }
+    nav{
+        height: 80px;
+        width: 200%;
+        position: relative;
+        border: 1px solid black;
+    }
+    nav h3{
+        display: block;
+        color: white;
+        padding: 2vw 5vw;
+        font-size: 9vw;
+        font-weight: 600;
+    }
+    nav img{
+        display: none;
+    }
+    #nav-2{
+        display: none;
+    }
+    #nav-3{
+        display: block;
+    }
+    .nav-3{
+        border-bottom: 1px solid white;
+    }
+    #nav-3 h4 a {
+        position: relative;
+        text-decoration: none;
+        color: white;
+        font-size: 9vw;
+        font-weight: 400;
+    }
+    .page2{
+        min-height: 100vh;
+        width: 200%;
+    }
+}
