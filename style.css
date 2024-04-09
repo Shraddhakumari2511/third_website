@@ -11,47 +11,8 @@ html,body{
     position: relative;
     z-index: 10;
 }
-#loader{
-    height: 100%;
-    width: 100%;
-    background-color: black;
-    position: fixed;
-    z-index: 99;
-    top: 0;
-    transition: all linear 0.5s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-#loader h1{
-    color: transparent;
-    background: linear-gradient(to right, rgb(224, 168, 12), rgb(230, 83, 15));
-    font-size: 4vw;
-    -webkit-background-clip: text;
-    position: absolute;
-    opacity: 0;
-    animation: load 1s linear 1s;
-}
-#loader h1:nth-child(2){
-    animation-delay: 2s;
-}
-#loader h1:nth-child(3){
-    animation-delay: 3s;
-}
-@keyframes load {
-    0%{
-        opacity: 0;
-    }
-    10%{
-        opacity: 1;
-    }
-    90%{
-        opacity: 1;
-    }
-    100%{
-        opacity: 0;
-    }
-}
+
+
 #page1{
     min-height: 100vh;
     width: 100%;
